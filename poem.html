@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Prevent scrolling on body */
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            gap: 20px; /* Space between images */
+            overflow-y: auto; /* Enables vertical scrolling */
+            padding: 20px;
+            max-height: 90vh; /* Limits the height of the container */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in width calculations */
+            align-items: center; /* Center images horizontally */
+        }
+
+        .image-container img {
+            width: 100%; /* Make images responsive to container */
+            max-width: 700px; /* Limit maximum width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensures the image covers the area without distorting */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        /* Optional: Hide scrollbar for a cleaner look */
+        .image-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .image-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="./Poem1.jpg" class="one" alt="Poem 1">
+        <img src="./poem2.jpg" class="two" alt="Poem 2">
+        <img src="./poem3.jpg" class="three" alt="Poem 3">
+        <img src="./poem4.jpg" class="four" alt="Poem 4">
+    </div>
+</body>
+</html>

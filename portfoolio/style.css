@@ -1,0 +1,287 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* background-image: url(background.jpg); */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%; /* Adjusted for smaller screens */
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.links {
+    font-size: 16px; /* Responsive font size */
+    color: white;
+    font-weight: 500;
+    margin: 0 10px; /* Reduced margin for smaller screens */
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar {
+        width: 100%; /* Full width for navbar */
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .links {
+        margin: 5px 0; /* Spacing between links */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%; /* Even smaller padding */
+    }
+
+    .links {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%; /* Reduced padding for smaller screens */
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s ease;
+}
+
+.logo {
+    font-size: 30px; /* Adjusted size for responsiveness */
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 0;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 16px; /* Adjusted size for responsiveness */
+    color: white;
+    font-weight: 500;
+    margin: 0 10px; /* Reduced margin for smaller screens */
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 8px 20px; /* Adjusted padding for responsiveness */
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 14px; /* Adjusted size for responsiveness */
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.home {
+    background: rgb(248, 251, 252);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 50px 5%; /* Reduced padding for smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+}
+
+.home-content {
+    font-size: 40px; /* Adjusted size for responsiveness */
+    margin-top: 50px;
+}
+
+.home-content2 {
+    font-size: 30px; /* Adjusted size for responsiveness */
+}
+
+.home-content p {
+    width: 100%; /* Make width responsive */
+    max-width: 300px; /* Max width for larger screens */
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-1:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.btn-1 {
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.portfolio {
+    color: orangered;
+    text-decoration: underline;
+}
+
+.profile-image {
+    margin-top: 90px;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px solid black;
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.sanjana {
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 25px; /* Smaller logo size */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller nav item size */
+        margin: 0 5px; /* Reduced margin */
+    }
+
+    .home-content {
+        font-size: 32px; /* Smaller font size for home content */
+    }
+
+    .home-content2 {
+        font-size: 24px; /* Smaller font size for home content */
+    }
+
+    .contact {
+        padding: 6px 15px; /* Smaller button padding */
+        font-size: 14px; /* Adjusted size */
+    }
+
+    .about-content p {
+        font-size: 18px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 20px; /* Even smaller logo size */
+    }
+
+    .navbar a {
+        font-size: 12px; /* Smaller nav item size */
+        margin: 0 3px; /* Reduced margin */
+    }
+
+    .home-content {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .home-content2 {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .contact {
+        padding: 5px 10px; /* Smaller button padding */
+        font-size: 12px; /* Adjusted size */
+    }
+
+    .about-content p {
+        font-size: 16px; /* Smaller font size */
+    }
+}

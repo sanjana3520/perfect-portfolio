@@ -1,0 +1,519 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #9d9fea;
+    text-align: center;
+}
+/* . Header and Navigation */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.logo {
+    color: #f9f8f4;
+}
+
+span {
+    color: #e5380c;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* . Home Section */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: #ffffff;
+    max-width: 800px;
+    box-shadow: 0 2px 20px rgb(201, 64, 19);
+    background-color: #ebcee1;
+
+}
+
+.a {
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pic {
+    width: 100%; /* Make the image width responsive */
+    max-width: 400px; /* Keep a max width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    margin: 35px auto;
+    border: 2px solid rgb(195, 34, 34);
+    box-shadow: 2px 5px 5px 6px rgb(212, 12, 52);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .pic {
+        max-width: 300px; /* Reduce max width for smaller screens */
+        box-shadow: 3px 3px 3px 3px rgb(222, 21, 61);
+    }
+}
+
+@media (max-width: 400px) {
+    .pic {
+        max-width: 100%; /* Allow the image to scale within small containers */
+        border-width: 1px; /* Reduce border thickness for small screens */
+        box-shadow: 2px 2px 2px 2px rgb(222, 21, 61);
+    }
+}
+
+
+
+
+ /* About Me Section */
+ 
+
+.l {
+    font-weight: bold;
+    color: black;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+/* Styling for the button */
+button {
+    font-size: 15px;
+    background-color: #e5380c;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: 0 2px 20px rgb(23, 5, 12);
+}
+
+/* Make the image responsive */
+.r {
+    width: 100%; /* Make the image width responsive */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    /* border-radius: 15px; Optional rounded corners */
+    margin-top: 20px;
+    display: block; /* Center the image */
+    margin-left: auto;
+    border: 2px solid #333;
+    margin-right: auto;
+    box-shadow: 0 2px 20px rgb(10, 6, 6);
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .l {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        margin-left: 10px;
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+        width: 100%;
+    }
+
+    .r {
+        max-width: 100%; /* Ensure image takes full width in smaller screens */
+    }
+}
+
+/* . Education Section */
+#education {
+    width: 100%; /* Make it full width */
+    max-width: 600px; /* Keep the max width */
+    margin: 20px auto; /* Center it */
+    background-color: #ebcee1;
+   
+    box-shadow: 0 2px 20px rgb(201, 64, 19);
+    padding: 20px; /* Added padding for spacing */
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+ /* Experience Section */
+ /* #experience {
+    width: 500px;
+    background-color: #e6e4a9;
+    border-radius: 50px;
+    box-shadow: 0 2px 20px rgb(253, 72, 12);
+} */
+#experience {
+    width: 100%; /* Make it full width */
+    max-width: 500px; /* Keep the max width */
+    margin: 20px auto; /* Center it */
+    background-color: #ebcee1;
+    box-shadow: 0 2px 20px rgb(253, 72, 12);
+    padding: 20px; /* Added padding for spacing */
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    
+}
+
+/* Skills Section */
+/* General section styles */
+/* General section styles */
+#skills {
+    background-color: #ebcee1;
+   
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Title styling */
+.section-title {
+    color: #35424a;
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex layout for skill categories */
+.skill-set {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Added spacing between skill boxes */
+}
+
+/* Skill boxes */
+.soft-skill, .tech-skill {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Takes less width for larger screens */
+    box-shadow: 0 2px 20px rgb(219, 222, 29);
+    transition: transform 0.3s ease;
+    border:1px solid #333;
+}
+
+/* Hover effect */
+.soft-skill:hover, .tech-skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill items */
+.skill-item {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 10px 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on skills */
+.skill-item:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Individual skill colors */
+.communication {
+    color: #4caf50;
+}
+
+.teamwork {
+    color: #ff9800;
+}
+
+.leadership {
+    color: #2196f3;
+}
+
+.problem-solving {
+    color: #e91e63;
+}
+
+.html {
+    color: #e34c26;
+}
+
+.css {
+    color: #264de4;
+}
+
+.javascript {
+    color: #f7df1e;
+}
+
+/* Responsive styling for small to medium devices */
+@media (max-width: 768px) {
+    .soft-skill, .tech-skill {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    #skills {
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    .section-title {
+        font-size: 1.8em; /* Adjust title size */
+    }
+    
+    .skill-item {
+        font-size: 1.1em; /* Adjust skill item size */
+    }
+}
+
+/* Additional responsive rules for extra small screens */
+@media (max-width: 480px) {
+    #skills {
+        padding: 10px; /* Reduce padding further for very small screens */
+    }
+
+    .section-title {
+        font-size: 1.5em; /* Further reduce title size */
+    }
+
+    .skill-item {
+        font-size: 1em; /* Adjust skill item size */
+    }
+
+    .soft-skill, .tech-skill {
+        padding: 15px; /* Less padding on small screens */
+    }
+}
+/* #skills {
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 19px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    color: #35424a;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.skill-set {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.soft-skill, .tech-skill {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+/* . Projects Section */
+/* General styles for the projects section */
+#projects {
+    padding: 20px;
+    
+    background-color: #ebcee1;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the projects section */
+    box-shadow: 0 2px 20px rgb(219, 222, 29);
+}
+
+/* Individual project item styles */
+.project-item {
+    background-color: #ebcee1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Added a hover transition */
+}
+
+/* Project item hover effect */
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Link styles for project items */
+.project-item a {
+    text-decoration: none;
+    background-color: #35424a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Link hover effect */
+.project-item a:hover {
+    background-color: #98a9ba;
+}
+
+/* Responsive styling for medium to small screens */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column width for smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .project-item {
+        padding: 15px; /* Reduce project item padding */
+    }
+    
+    .project-item a {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+}
+
+/* Responsive styling for extra small screens */
+@media (max-width: 480px) {
+    #projects {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Further adjust for very small screens */
+        padding: 10px;
+    }
+
+    .project-item {
+        padding: 10px;
+    }
+
+    .project-item a {
+        padding: 6px 12px;
+        font-size: 0.9em; /* Reduce button font size */
+    }
+}
+
+/* . Poetry Section */
+#poetry {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ebcee1;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Contact Section */
+/* Basic styling for the contact section */
+#contact {
+    background-color: #ebcee1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 20px rgb(219, 222, 29);
+}
+
+/* Container styling */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling for each contact item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: #007bff; /* Color for icons */
+}
+
+/* Email link styling */
+.contact-item a {
+    text-decoration: none;
+    color: #2775c9;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
+/* Hover effect on icons */
+.contact-item i:hover {
+    color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px;
+    }
+
+    .contact-item {
+        font-size: 1em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-item i {
+        font-size: 1.3em;
+    }
+}
+.contact-item.phone i {
+    color: #4CAF50; /* Green for phone icon */
+}
+
+.contact-item a {
+    color: #0f0904; /* Default link color */
+}
+
+.contact-item.email i {
+    color: #FF5722; /* Orange for email icon */
+}
+
+.contact-item.linkedin i {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.contact-item.github i {
+    color: #333; /* Dark gray for GitHub icon */
+}
+
+/* Hover effect on icons */
+.contact-item i:hover {
+    color: #0056b3; /* Default hover color for all icons */
+}
